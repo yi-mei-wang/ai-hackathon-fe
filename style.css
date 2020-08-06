@@ -14,3 +14,11 @@ df-messenger {
 .chart-wrapper {
     height: calc(100vh - 70px);
 }
+
+.my-jumbotron {
+    background-color: #e9ecef;
+}
+
+div#navbarNavDropdown {
+    flex-grow: 0;
+}
