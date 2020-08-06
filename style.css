@@ -2,3 +2,11 @@
     max-height: 30vh !important;
     min-height: 300px !important;
 }
+
+.ape-logo {
+    height: 30px;
+}
+
+df-messenger {
+    --df-messenger-button-titlebar-color: #443313;
+}
