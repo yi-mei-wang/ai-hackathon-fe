@@ -2,11 +2,11 @@
     'use strict';
 
     var CUSTOM_ELEMENTS_ADAPTER_URL =
-        'custom-element-es5.js';
+        'js/custom-element-es5.js';
     var WEBCOMPONENTS_LOADER_URL =
-        'webcomponents-loader.js';
+        'js/webcomponents-loader.js';
     var MESSENGER_URL =
-        'messenger-internal.min.js';
+        'js/messenger-internal.min.js';
 
     var loadDfMessenger = function() {
         var elementScript = document.createElement('script');
