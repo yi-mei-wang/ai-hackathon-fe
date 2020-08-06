@@ -1,1 +1,1 @@
-# bootnoodles
+# ai-hackathon-fe
