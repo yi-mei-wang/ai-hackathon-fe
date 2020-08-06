@@ -8,5 +8,9 @@
 }
 
 df-messenger {
-    --df-messenger-button-titlebar-color: #443313;
+    --df-messenger-button-titlebar-color: #1D5692;
+}
+
+.chart-wrapper {
+    height: calc(100vh - 70px);
 }
