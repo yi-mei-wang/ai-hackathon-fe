@@ -1,0 +1,4 @@
+div.chat-wrapper[opened="true"] {
+    max-height: 30vh !important;
+    min-height: 300px !important;
+}
