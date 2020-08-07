@@ -1,6 +1,5 @@
-:host> :host div.chat-wrapper[opened="true"] {
-    max-height: 30vh !important;
-    min-height: 300px !important;
+.content-wrapper {
+    background-color: #efefef;
 }
 
 .ape-logo {
@@ -21,4 +20,15 @@ df-messenger {
 
 div#navbarNavDropdown {
     flex-grow: 0;
+}
+
+.about {
+    display: flex;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    background-color: #f3f3f3;
+}
+
+.virus {
+    background-color: #e3e4e0;
 }
