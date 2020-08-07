@@ -1,5 +1,9 @@
-import { homepage } from "./homepage.js";
+import { contentFn } from "./contentFn.js"
+
 
 window.onload = event => {
-    homepage()
+    console.log(event)
+    let href = window.location.href.split("#")[1]
+    const content = href ? contentFn[href] : contentFn["home"];
+    content()
 }

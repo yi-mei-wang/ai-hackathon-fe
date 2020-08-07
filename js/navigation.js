@@ -1,15 +1,11 @@
-import { getHomepageContent } from "./homepage.js";
+import { contentFn } from "./contentFn.js"
+
 
 const navItems = {
     "home": "Home",
     "about": "About",
     "resources": "Covid-19 Resources",
     "contact": "Contact"
-}
-
-const contentFns = {
-    "home": getHomepageContent,
-    "about": console.log
 }
 
 const navigate = event => {
@@ -28,7 +24,7 @@ const updateActiveAttr = (elem) => {
 
 const replaceContent = (elem) => {
     const href = elem.href.split("#")[1];
-    document.querySelector("#content-wrapper").innerHTML = contentFns[href]();
+    contentFn[href]();
 }
 
 Object.entries(navItems).map(([key, item]) => {

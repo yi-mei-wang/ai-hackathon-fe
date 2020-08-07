@@ -7,7 +7,7 @@
 }
 
 df-messenger {
-    --df-messenger-button-titlebar-color: #1D5692;
+    --df-messenger-button-titlebar-color: #6F9CB3;
 }
 
 .chart-wrapper {
@@ -15,20 +15,24 @@ df-messenger {
 }
 
 .my-jumbotron {
-    background-color: #e9ecef;
+    background-color: #e5edf1;
 }
 
 div#navbarNavDropdown {
     flex-grow: 0;
 }
 
-.about {
+.parent {
     display: flex;
     width: 100vw;
     height: calc(100vh - 70px);
     background-color: #f3f3f3;
 }
 
-.virus {
-    background-color: #e3e4e0;
+.sidebar {
+    background-color: #e5edf1;
+}
+
+.lead-header {
+    font-weight: 300;
 }
