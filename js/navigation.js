@@ -1,9 +1,21 @@
-const navItems = ["Home", "About", "Covid-19 Resources", "Contact"]
+import { getHomepageContent } from "./homepage.js";
+
+const navItems = {
+    "home": "Home",
+    "about": "About",
+    "resources": "Covid-19 Resources",
+    "contact": "Contact"
+}
+
+const contentFns = {
+    "home": getHomepageContent,
+    "about": console.log
+}
 
 const navigate = event => {
     let clickedElem = event.target;
     updateActiveAttr(clickedElem);
-    replaceContent()
+    replaceContent(clickedElem);
 }
 
 const updateActiveAttr = (elem) => {
@@ -14,16 +26,17 @@ const updateActiveAttr = (elem) => {
 
 }
 
-const replaceContent = () => {
-    document.querySelector("#content-wrapper").innerHTML = "yo";
+const replaceContent = (elem) => {
+    const href = elem.href.split("#")[1];
+    document.querySelector("#content-wrapper").innerHTML = contentFns[href]();
 }
 
-navItems.map(item => {
+Object.entries(navItems).map(([key, item]) => {
     let listItem = document.createElement("li");
     listItem.classList.add("nav-item");
     let a = document.createElement("a");
     a.innerHTML = item;
-    a.href = `#${item.toLowerCase().replace(" ", "-")}`
+    a.href = `#${key}`
     a.classList.add("nav-link");
     a.onclick = navigate;
 

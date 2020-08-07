@@ -1,5 +1,9 @@
 export const homepage = () => {
-    document.querySelector("#content-wrapper").innerHTML = "        <!-- jumbotron -->" +
+    document.querySelector("#content-wrapper").innerHTML = getHomepageContent();
+}
+
+export const getHomepageContent = () => {
+    return '<!-- jumbotron -->' +
         '<div class="my-jumbotron jumbotron-fluid py-2 px-1">' +
         '    <div class="container">' +
         '        <!-- <h1 class="display-4">WELCOME</h1> -->' +
