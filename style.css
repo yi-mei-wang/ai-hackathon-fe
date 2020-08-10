@@ -1,6 +1,5 @@
-:host> :host div.chat-wrapper[opened="true"] {
-    max-height: 30vh !important;
-    min-height: 300px !important;
+.content-wrapper {
+    background-color: #efefef;
 }
 
 .ape-logo {
@@ -8,9 +7,32 @@
 }
 
 df-messenger {
-    --df-messenger-button-titlebar-color: #1D5692;
+    --df-messenger-button-titlebar-color: #6F9CB3;
 }
 
 .chart-wrapper {
     height: calc(100vh - 70px);
+}
+
+.my-jumbotron {
+    background-color: #e5edf1;
+}
+
+div#navbarNavDropdown {
+    flex-grow: 0;
+}
+
+.parent {
+    display: flex;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    background-color: #f3f3f3;
+}
+
+.sidebar {
+    background-color: #e5edf1;
+}
+
+.lead-header {
+    font-weight: 300;
 }
